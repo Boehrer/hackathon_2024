@@ -8,7 +8,7 @@ terraform {
 }
 
 provider "google" {
-  project = "concise-perigee-228117"
+  project = var.project_id
   region  = "us-central1"
   zone    = "us-central1-c"
   credentials = file("service_account_key.json")
