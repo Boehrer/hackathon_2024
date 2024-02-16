@@ -70,7 +70,6 @@ resource "google_compute_instance" "broker" {
   }
 
   service_account {
-    email = var.client_email
     scopes = [
       "https://www.googleapis.com/auth/cloud-platform",
     ]
